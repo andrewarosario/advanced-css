@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "watch:natours": "node-sass natours/sass/main.scss natours/css/style.css -w",
+    "watch:trillo": "node-sass trillo/sass/main.scss trillo/css/style.css -w",
+
     "watch:sass": "node-sass natours/sass/main.scss natours/css/style.css -w",
     "devserver": "live-server",
     "start": "npm-run-all --parallel devserver watch:sass",
